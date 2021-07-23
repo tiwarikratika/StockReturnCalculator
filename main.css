@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+:root{
+    --primary-color:white;
+    --secondary-color:black ;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    color:var(--secondary-color);
+}
+
+body{
+    margin: 0;
+    background: black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Arvo', serif;
+}
+
+.main-sec{
+
+    padding: 0 2rem;
+  
+
+
+}
+.heading{
+    padding-top: 10%;
+    font-size: 30px;
+    padding-left: 4%;
+}
+
+.col1{
+    width: 60%;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat; */
+    
+    /* position: relative; */
+    padding-bottom: 1rem;
+}
+
+#output{
+    font-size: 32px;
+    padding-top: 5%;
+    padding-left:5% ;
+    /* background-color: gray ; */
+}
+
+.btn{
+    color: var(--primary-color);
+    background:var(--secondary-color);
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.btn2{
+    color: var(--primary-color);
+    background:var(--secondary-color);
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;
+   margin-top: 15%;
+   margin-right: 15%;
+   cursor: pointer;
+   
+
+}
+a{
+    color: rgba(10, 2, 80, 0.753);
+    text-decoration: none;
+    margin-top: 5%;
+    padding-right: 5%;
+    padding-top: 10rem;
+}
+
+input{
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-right: 5%;
+    
+}
+
+.col2{
+    width: 50%;
+    background-image: url("image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* min-height: inherit; */
+    /* text-align: right; */
+    /* position: relative; */
+}
+
+.display{
+    border-radius: 2%;
+    background-color:var(--primary-color);
+    display: flex;
+    margin: 4rem auto;
+    max-width: 100%;
+    min-height: 80vh;
+    box-shadow:5px 5px 5px 5px white;
+}
+.btn:hover, .btn2:hover{
+    color: var(--secondary-color);
+    background:var(--primary-color);
+
+}
+@media screen and (max-width:600px) {
+   
+    .main-sec{
+        padding:0;
+    }
+    .col1{
+        width: 100%;
+        /* padding: 0.5rem 0.5rem; */
+    }
+    .col2{
+        width: 100%;
+        /* display: none; */
+        min-height: 50vh;
+    }
+
+    
+  }
