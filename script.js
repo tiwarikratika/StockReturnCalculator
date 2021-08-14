@@ -25,14 +25,15 @@ function myfunc()
        var profitinRs = (returns-invested);
        var profitper = (profitinRs/invested)*100;
        out.style.color = "green";
-       out.innerText = "You have a total profit of "+ profitper + "%";
+       out.innerText = "You have a total profit of Rs"+  profitinRs.toFixed(2) +" that is " +profitper.toFixed(2) + "%";
 
    }
    else if(invested>returns){
        var lossinRs = (invested-returns);
        var lossper = (lossinRs/invested)*100;
        out.style.color = "red";
-       out.innerText = "Ohh No !! You have a loss of "+lossper + "%";
+       out.innerText = "Ohh No !! You have a loss of Rs" + lossinRs.toFixed(2) +"that is" + lossper.toFixed(2) + "%";
+      
 
    }
    else{
